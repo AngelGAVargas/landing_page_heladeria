@@ -42,18 +42,21 @@ header ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-header li {
-  margin: 0 1rem;
+header nav li {
+  margin: 0 0.1rem;
 }
 
-header li a {
+header nav li a {
   color: #fff;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
-
+header nav li a img{
+  width: 50px;
+}
 header li a:hover {
   border-radius: 10px;
   background-color: #00ff955b;
@@ -81,51 +84,45 @@ header li a:hover {
 }
 /* Ventanta modal*/
 .modal-container{
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  position: fixed;/*para que se coloque por arriba de los demas div*/
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-}
-.show{
-  pointer-events: auto;
-  opacity: 1;
-}
-.modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-image: url("src/img/modal.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 600px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
-}
-.sabores{
+  display: none;
+ }
+ .sec_container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .diplay_sabores{
+   display: none;
+ }
+ .sec{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ .sec h2{
+   padding: 1rem;
+ }
+ .opc_sabores {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-.sabores ul{
+  flex-wrap: wrap;
+  justify-content:space-between;
+ }
+ .opc_sabores ul{
   margin: 2rem;
-}
-.sec_sabores{
-  display: none;
-}
+ }
+ .opc_sabores ul h4{
+   padding: 5px;
+ }
+ .opc_sabores ul li{
+   padding: 5px;
+   list-style: none;
+ }
+ .close{
+   margin: 20px;
+ }
 /* Estilos para la sección "Sobre nosotros" */
 .about {
   padding: 1rem 4rem;
@@ -314,18 +311,22 @@ header nav {
   align-items: center;
 }
 
-header ul {
+header nav ul {
   list-style: none;
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
+  align-items: center;
 }
 
-header li a {
+header nav li a {
   color: #fff;
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
+header nav li a img{
+  width: 30px;
+}
 header li a:hover {
   border-radius: 10px;
   background-color: #00ff955b;
