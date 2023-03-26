@@ -92,15 +92,13 @@
         </ul>
       </section>
       <section class="contact">
-        <h2>Contáctanos</h2>
+        <h2>Realiza una consulta</h2>
         <form>
           <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="text" id="nombre" name="name" required>
           <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Enviar</button>
+          <textarea id="mensaje" name="message" required></textarea>
+          <button type="button" onclick="mensajedewpp()">Enviar</button>
         </form>
       </section>
       <section class="location">
@@ -112,8 +110,13 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2023</p>
-      <img src="src/img/Logokonitos.svg">
+      <div class="footer1">
+        <p>&copy; 2023</p>
+        <img src="src/img/Logokonitos.svg">
+      </div>
+      <div class="footer2">
+        <p>Web desarrolada por <a href="#">Ariel Vargas</a></p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
